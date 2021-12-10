@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+}
+
+.hide_nav, .show_nav {
+    top: 0px;
+    width: 28vw;
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(237, 243, 243);
+}
+
+.hide_nav {
+    display: none;
+}
+
+.show_nav a {
+    display: block;
+    background: transparent;
+}
+
+span {
+    margin-left: 2vw;
+}

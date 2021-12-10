@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/signout.css">
+</head>
+<body>
+    <nav class="hi">
+        <ul>
+            <li class="sta">
+                <li class="sim"><a href="./signout.html">Home</a></li>
+                <li class="sim"><a href="#">About</a></li>
+                <li class="sim"><a href="#">Contact</a></li>
+            </li>
+            <li class="dyn">
+                <li class="sign"><a href="./home.html">Signin</a></li>
+                <li class="sign"><a href="#">Signup</a></li>
+            </li>
+        </ul>
+    </nav>
+    <img src="../images/marigold.bmp" alt="Prospectus">
+    <img src="../images/home.bmp" alt="Programmes">
+    <section>
+        <h1>Popular Educational Quotes</h1>
+        <article>
+            <p>'Education is the passport to the future, for tomorrow belongs to those who prepare for it today. – Malcolm X'</p>
+            <p>'An investment in knowledge pays the best interest. –  Benjamin Franklin'</p>
+            <p>'Live as if you were to die tomorrow. Learn as if you were to live forever. ― Mahatma Gandhi'</p>
+            <p>'The learning process continues until the day you die. – Kirk Douglas'</p>
+            <p>'Develop a passion for learning. If you do, you will never cease to grow. – Anthony J. D’Angelo'</p>
+            <p>' A person who won’t read has no advantage over one who can’t read. – Mark Twain'</p>
+            <p>'They know enough who know how to learn. – Henry Adams'</p>
+            <p>'Education is the ability to listen to almost anything without losing your temper or your self-confidence. ― Robert Frost'</p>
+        </article>
+    </section>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+        window.addEventListener('scroll', function(){
+            navbar_height = document.querySelector('.hi').offsetHeight;
+            if(window.scrollY > navbar_height){
+                document.querySelector('.hi').style.position = 'fixed';
+            }else{
+                document.querySelector('.hi').style.position = 'relative';
+                document.body.style.paddingTop = '0px';
+            }
+        })
+    })
+</script>
+</html>
